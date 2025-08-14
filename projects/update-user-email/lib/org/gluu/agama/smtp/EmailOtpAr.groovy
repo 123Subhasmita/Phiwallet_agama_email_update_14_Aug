@@ -51,10 +51,11 @@ class EmailOtpAr {
             <!-- Footer -->
             <tr>
               <td>
-                <table role="presentation" cellspacing="0" cellpadding="0" width="570" align="center" style="margin:0 auto;padding:0;text-align:center;">
+                <table role="presentation" cellspacing="0" cellpadding="0" width="570" align="center" 
+                       style="margin:0 auto;padding:0;text-align:center;direction:ltr;">
                   <tbody>
                     <tr>
-                      <td style="padding:20px;font-size:12px;color:#666; direction:ltr; text-align:left;">
+                      <td style="padding:20px;font-size:12px;color:#666;text-align:center;">
                         <p style="margin:0 0 10px 0;font-size:14px;font-weight:bold;color:#565555;">
                           Follow us on:
                         </p>
@@ -84,6 +85,7 @@ class EmailOtpAr {
                 </table>
               </td>
             </tr>
+
 
 
           </tbody>
