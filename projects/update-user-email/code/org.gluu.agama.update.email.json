@@ -429,16 +429,14 @@
 					"displayName": "RRF",
 					"hasComment": true,
 					"comment": "Display update user page",
-					"arguments": [
-						"userWithUid"
-					]
+					"arguments": "updateModel"
 				}
 			},
 			"measured": {
 				"width": 170,
 				"height": 124
 			},
-			"selected": false
+			"selected": true
 		},
 		{
 			"id": "assignmentNode-ff55da90-e37e-4952-9402-9a1187f12240",
@@ -2286,7 +2284,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true
+			"selected": false
 		}
 	],
 	"edges": [
