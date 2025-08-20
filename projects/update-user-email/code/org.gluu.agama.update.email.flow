@@ -37,7 +37,7 @@ Repeat 6 times max
                     uiFeedback.errorMessage = "User not registered with this UserName"
                Otherwise
                     // Repeat 5 times
-                    Repeat 5 times max
+                    abc = Repeat 5 times max
                     // Build model for update page with error support
                     updateModel = userWithUid
                     updateModel.errorMessage = uiFeedback.errorMessage
@@ -102,8 +102,8 @@ Repeat 6 times max
                                              //  Finish the flow successfully
                                              Log "@info Finish the flow successfully"
                                              //  Finish the flow successfully
-                                             it_lskth = {success:true, data: { userId: userName, email: email}}
-                                             Finish it_lskth
+                                             it_ylqos = {success:true, data: { userId: userName, email: email}}
+                                             Finish it_ylqos
                                         Otherwise
                                              //  User update failed log
                                              Log "@info User update failed. Error : %" E
@@ -114,10 +114,10 @@ Repeat 6 times max
                          uiFeedback.errorMessage = "You have reached the maximun email OTP verification"
                          // Email OTP verification loop completed
                          Log "@error You have reached the maximun email OTP verification"
-                         it_nzpxg = {success:false, error: "ExceededTheNumberOfAttemptsAllowed"}
-                         Finish it_nzpxg
+                         it_vkpje = {success:false, error: "ExceededTheNumberOfAttemptsAllowed"}
+                         Finish it_vkpje
 //  Maximum attempt reached
 Log "@info Maximum attempt reached"
 //  User Registration flow failed
-it_rgxgn = {success:false, error: "User update flow reached max attempts try later"}
-Finish it_rgxgn
+it_czkqf = {success:false, error: "User update flow reached max attempts try later"}
+Finish it_czkqf
