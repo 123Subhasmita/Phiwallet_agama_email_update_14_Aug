@@ -2304,7 +2304,7 @@
 				"previousNodeId": "whenNode-25f614fe-1ae3-4384-90e0-85477af73f35",
 				"branching": "success",
 				"agamaData": {
-					"logMessage": "Email already exists. Please use a different email.",
+					"logMessage": "\"User already registered with mail: %\" email",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16",
 					"nodeColor": "",
@@ -2319,7 +2319,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "assignmentNode-6f88d86a-4a51-4fa6-ab55-33fc3d522f30",
@@ -2337,20 +2337,27 @@
 				},
 				"previousNodeId": "logNode-547ce77f-c114-4ddc-acee-28da506384d8",
 				"agamaData": {
-					"assignments": [],
+					"assignments": [
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "\"User already Registered with this email\"",
+							"assignedVariableName": "uiFeedback.errorMessage"
+						}
+					],
 					"nodeIcon": "material-symbols:equal",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
-					"displayName": "",
+					"displayName": "User Exist",
 					"hasComment": true,
-					"comment": ""
+					"comment": "User Exist"
 				}
 			},
 			"measured": {
 				"width": 170,
 				"height": 124
-			}
+			},
+			"selected": true
 		}
 	],
 	"edges": [
