@@ -365,8 +365,8 @@
 			"id": "whenNode-532b07c7-f7a9-4a53-a097-f7259278fa5f",
 			"type": "whenNode",
 			"position": {
-				"x": 2055,
-				"y": 504
+				"x": 1959.473800783784,
+				"y": 401.9309104265092
 			},
 			"data": {
 				"id": "whenNode-532b07c7-f7a9-4a53-a097-f7259278fa5f",
@@ -401,14 +401,15 @@
 				"width": 110,
 				"height": 60
 			},
-			"selected": false
+			"selected": false,
+			"dragging": false
 		},
 		{
 			"id": "rrfNode-05cc3d1d-f042-49bb-a3bf-15e3a2d48c66",
 			"type": "rrfNode",
 			"position": {
-				"x": 2834.886039259292,
-				"y": 234.33456602545238
+				"x": 2641.8708336216278,
+				"y": 206.85442652489712
 			},
 			"data": {
 				"id": "rrfNode-05cc3d1d-f042-49bb-a3bf-15e3a2d48c66",
@@ -480,94 +481,6 @@
 			"selected": false
 		},
 		{
-			"id": "whenNode-8d9ae6b5-2a60-47cd-b5ea-7627846deb7b",
-			"type": "whenNode",
-			"position": {
-				"x": 3120,
-				"y": 306
-			},
-			"data": {
-				"id": "whenNode-8d9ae6b5-2a60-47cd-b5ea-7627846deb7b",
-				"type": "whenNode",
-				"position": {
-					"x": 2555,
-					"y": 254
-				},
-				"previousNodeId": "rrfNode-05cc3d1d-f042-49bb-a3bf-15e3a2d48c66",
-				"agamaData": {
-					"variableField": "",
-					"valueField": "",
-					"conditionInputField": "",
-					"conditions": [
-						{
-							"variable": "userInput.empty",
-							"operator": "is",
-							"dataValue": "true",
-							"combinator": "none"
-						}
-					],
-					"nodeIcon": "ph:swap",
-					"nodeColor": "",
-					"titleColor": "",
-					"descColor": "",
-					"displayName": "",
-					"hasComment": true,
-					"comment": "when fields values are not entered"
-				}
-			},
-			"measured": {
-				"width": 110,
-				"height": 60
-			},
-			"selected": false,
-			"dragging": false
-		},
-		{
-			"id": "assignmentNode-b6a25d34-d1c2-476d-ba6c-f7392d095417",
-			"type": "assignmentNode",
-			"position": {
-				"x": 3329.709531044684,
-				"y": 455.0105199624778
-			},
-			"data": {
-				"id": "assignmentNode-b6a25d34-d1c2-476d-ba6c-f7392d095417",
-				"type": "assignmentNode",
-				"position": {
-					"x": 2805,
-					"y": 454
-				},
-				"previousNodeId": "whenNode-8d9ae6b5-2a60-47cd-b5ea-7627846deb7b",
-				"branching": "success",
-				"agamaData": {
-					"assignments": [
-						{
-							"variableTypeCheck": true,
-							"assignmentExpression": "\"User input fields are empty\"",
-							"assignedVariableName": "uiFeedback.errorMessage"
-						},
-						{
-							"variableTypeCheck": true,
-							"assignmentExpression": "userInput.inum",
-							"assignedVariableName": "inum"
-						}
-					],
-					"nodeIcon": "material-symbols:equal",
-					"nodeColor": "",
-					"titleColor": "",
-					"descColor": "",
-					"displayName": "ASSIGNMENT",
-					"hasComment": true,
-					"comment": "show error"
-				}
-			},
-			"measured": {
-				"width": 170,
-				"height": 124
-			},
-			"selected": false,
-			"dragging": false
-		},
-		{
 			"id": "assignmentNode-3b400892-5894-4ccf-8aee-88776e92ca78",
 			"type": "assignmentNode",
 			"position": {
@@ -581,7 +494,7 @@
 					"x": 2805,
 					"y": 4
 				},
-				"previousNodeId": "whenNode-8d9ae6b5-2a60-47cd-b5ea-7627846deb7b",
+				"previousNodeId": "rrfNode-05cc3d1d-f042-49bb-a3bf-15e3a2d48c66",
 				"branching": "otherwise",
 				"agamaData": {
 					"assignments": [
@@ -589,16 +502,6 @@
 							"variableTypeCheck": true,
 							"assignmentExpression": "userInput.mail",
 							"assignedVariableName": "email"
-						},
-						{
-							"variableTypeCheck": true,
-							"assignmentExpression": "userWithUid.inum",
-							"assignedVariableName": "inum"
-						},
-						{
-							"variableTypeCheck": true,
-							"assignmentExpression": "userWithUid.lang",
-							"assignedVariableName": "lang"
 						},
 						{
 							"variableTypeCheck": true,
@@ -2255,7 +2158,7 @@
 				"width": 110,
 				"height": 60
 			},
-			"selected": false
+			"selected": true
 		},
 		{
 			"id": "assignmentNode-673aa466-7ed8-44c3-87f4-d49037f4bb9e",
@@ -2335,8 +2238,8 @@
 			"id": "assignmentNode-5e7c2cd1-1887-4cc9-8bcb-bcdad8f204ec",
 			"type": "assignmentNode",
 			"position": {
-				"x": 2266.3750049972527,
-				"y": 266.4963219126535
+				"x": 2153.837290852122,
+				"y": 258.64485348392344
 			},
 			"data": {
 				"id": "assignmentNode-5e7c2cd1-1887-4cc9-8bcb-bcdad8f204ec",
@@ -2356,7 +2259,7 @@
 						},
 						{
 							"variableTypeCheck": true,
-							"assignmentExpression": "searchUserInput.lang",
+							"assignmentExpression": "userWithUid.lang",
 							"assignedVariableName": "lang"
 						}
 					],
@@ -2418,8 +2321,8 @@
 			"id": "repeatNode-1da3008e-7b5d-43dc-9a15-1722e9ff6fce",
 			"type": "repeatNode",
 			"position": {
-				"x": 2523.1911805859722,
-				"y": 72.2353176341301
+				"x": 2440.750762084306,
+				"y": 65.69242727685506
 			},
 			"data": {
 				"id": "repeatNode-1da3008e-7b5d-43dc-9a15-1722e9ff6fce",
@@ -2445,7 +2348,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		}
 	],
@@ -2601,63 +2504,6 @@
 			},
 			"labelShowBg": true,
 			"sourceHandle": "source_whenNode-532b07c7-f7a9-4a53-a097-f7259278fa5f_success"
-		},
-		{
-			"id": "rrfNode-05cc3d1d-f042-49bb-a3bf-15e3a2d48c66-whenNode-8d9ae6b5-2a60-47cd-b5ea-7627846deb7b",
-			"type": "default",
-			"source": "rrfNode-05cc3d1d-f042-49bb-a3bf-15e3a2d48c66",
-			"target": "whenNode-8d9ae6b5-2a60-47cd-b5ea-7627846deb7b",
-			"labelBgPadding": [
-				8,
-				4
-			],
-			"labelBgBorderRadius": 4,
-			"label": "",
-			"labelBgStyle": {
-				"fill": "#009688",
-				"color": "#ffffff",
-				"fillOpacity": 0.7
-			},
-			"labelShowBg": true,
-			"sourceHandle": "source_rrfNode-05cc3d1d-f042-49bb-a3bf-15e3a2d48c66"
-		},
-		{
-			"id": "whenNode-8d9ae6b5-2a60-47cd-b5ea-7627846deb7b-assignmentNode-b6a25d34-d1c2-476d-ba6c-f7392d095417",
-			"type": "default",
-			"source": "whenNode-8d9ae6b5-2a60-47cd-b5ea-7627846deb7b",
-			"target": "assignmentNode-b6a25d34-d1c2-476d-ba6c-f7392d095417",
-			"labelBgPadding": [
-				8,
-				4
-			],
-			"labelBgBorderRadius": 4,
-			"label": "Condition met",
-			"labelBgStyle": {
-				"fill": "#009688",
-				"color": "#ffffff",
-				"fillOpacity": 0.7
-			},
-			"labelShowBg": true,
-			"sourceHandle": "source_whenNode-8d9ae6b5-2a60-47cd-b5ea-7627846deb7b_success"
-		},
-		{
-			"id": "whenNode-8d9ae6b5-2a60-47cd-b5ea-7627846deb7b-assignmentNode-3b400892-5894-4ccf-8aee-88776e92ca78",
-			"type": "default",
-			"source": "whenNode-8d9ae6b5-2a60-47cd-b5ea-7627846deb7b",
-			"target": "assignmentNode-3b400892-5894-4ccf-8aee-88776e92ca78",
-			"labelBgPadding": [
-				8,
-				4
-			],
-			"labelBgBorderRadius": 4,
-			"label": "otherwise",
-			"labelBgStyle": {
-				"fill": "#009688",
-				"color": "#ffffff",
-				"fillOpacity": 0.7
-			},
-			"labelShowBg": true,
-			"sourceHandle": "source_whenNode-8d9ae6b5-2a60-47cd-b5ea-7627846deb7b_otherwise"
 		},
 		{
 			"id": "logNode-22443251-ca87-4890-acf4-be3af41ff76a-callNode-357b4876-1919-45ff-bb44-a69d9e33eef4",
@@ -3620,11 +3466,29 @@
 				"fillOpacity": 0.7
 			},
 			"id": "xy-edge__repeatNode-1da3008e-7b5d-43dc-9a15-1722e9ff6fcesource_repeatNode-1da3008e-7b5d-43dc-9a15-1722e9ff6fce_repeat-rrfNode-05cc3d1d-f042-49bb-a3bf-15e3a2d48c66target_rrfNode-05cc3d1d-f042-49bb-a3bf-15e3a2d48c66"
+		},
+		{
+			"source": "rrfNode-05cc3d1d-f042-49bb-a3bf-15e3a2d48c66",
+			"sourceHandle": "source_rrfNode-05cc3d1d-f042-49bb-a3bf-15e3a2d48c66",
+			"target": "assignmentNode-3b400892-5894-4ccf-8aee-88776e92ca78",
+			"targetHandle": "target_assignmentNode-3b400892-5894-4ccf-8aee-88776e92ca78",
+			"label": "",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"id": "xy-edge__rrfNode-05cc3d1d-f042-49bb-a3bf-15e3a2d48c66source_rrfNode-05cc3d1d-f042-49bb-a3bf-15e3a2d48c66-assignmentNode-3b400892-5894-4ccf-8aee-88776e92ca78target_assignmentNode-3b400892-5894-4ccf-8aee-88776e92ca78"
 		}
 	],
 	"viewport": {
-		"x": -1621.4082351795068,
-		"y": -55.899002836014006,
-		"zoom": 0.8802590135631507
+		"x": -2573.7451564832077,
+		"y": 132.72183230212931,
+		"zoom": 0.764188260382583
 	}
 }
