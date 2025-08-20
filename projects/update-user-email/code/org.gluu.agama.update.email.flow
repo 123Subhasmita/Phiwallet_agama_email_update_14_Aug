@@ -50,7 +50,7 @@ Repeat 6 times max
                          uiFeedback.errorMessage = ""
                          // Check if email is already used by someone
                          existingUserEmail = Call emailUpdateService getUserEntityByMail email
-                         When 
+                         When existingUserEmail.empty is false
                               Log "@info User already registered with mail: %" email
                               // User Exist
                               uiFeedback.errorMessage = "User already Registered with this email"
@@ -103,8 +103,8 @@ Repeat 6 times max
                                              //  Finish the flow successfully
                                              Log "@info Finish the flow successfully"
                                              //  Finish the flow successfully
-                                             it_seyfx = {success:true, data: { userId: userName, email: email}}
-                                             Finish it_seyfx
+                                             it_usvjr = {success:true, data: { userId: userName, email: email}}
+                                             Finish it_usvjr
                                         Otherwise
                                              //  User update failed log
                                              Log "@info User update failed. Error : %" E
@@ -115,10 +115,10 @@ Repeat 6 times max
                          uiFeedback.errorMessage = "You have reached the maximun email OTP verification"
                          // Email OTP verification loop completed
                          Log "@error You have reached the maximun email OTP verification"
-                         it_eoqik = {success:false, error: "ExceededTheNumberOfAttemptsAllowed"}
-                         Finish it_eoqik
+                         it_yqgek = {success:false, error: "ExceededTheNumberOfAttemptsAllowed"}
+                         Finish it_yqgek
 //  Maximum attempt reached
 Log "@info Maximum attempt reached"
 //  User Registration flow failed
-it_txmqh = {success:false, error: "User update flow reached max attempts try later"}
-Finish it_txmqh
+it_cccpi = {success:false, error: "User update flow reached max attempts try later"}
+Finish it_cccpi
