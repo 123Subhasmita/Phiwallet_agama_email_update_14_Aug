@@ -1102,7 +1102,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -2190,24 +2190,28 @@
 				"previousNodeId": "assignmentNode-3b400892-5894-4ccf-8aee-88776e92ca78",
 				"agamaData": {
 					"javaClassName": "",
-					"javaMethodName": "",
-					"javaVariableName": "",
+					"javaMethodName": "getUserEntityByMail",
+					"javaVariableName": "emailUpdateService",
 					"exceptionVariableField": "",
-					"callType": "Call static method",
-					"arguments": [],
+					"callType": "Call method on instance",
+					"arguments": [
+						"email"
+					],
 					"nodeIcon": "material-symbols:code",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
-					"displayName": "",
+					"displayName": "Check if email is already used by someone",
 					"hasComment": true,
-					"comment": ""
+					"comment": "Check if email is already used by someone",
+					"asssignedVariableName": "existingUserEmail"
 				}
 			},
 			"measured": {
 				"width": 170,
 				"height": 124
-			}
+			},
+			"selected": true
 		},
 		{
 			"id": "whenNode-25f614fe-1ae3-4384-90e0-85477af73f35",
@@ -3485,8 +3489,8 @@
 		}
 	],
 	"viewport": {
-		"x": -3230,
-		"y": 178.875,
-		"zoom": 1
+		"x": -1385.1344812857387,
+		"y": 241.99886184152274,
+		"zoom": 0.568014632393343
 	}
 }
