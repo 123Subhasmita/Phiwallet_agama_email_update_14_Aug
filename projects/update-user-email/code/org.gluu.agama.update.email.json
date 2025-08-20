@@ -2186,7 +2186,7 @@
 				"agamaData": {
 					"nodeIcon": "material-symbols:event-repeat-outline-rounded",
 					"maxIteration": "5",
-					"maxIterationVariableName": "abc",
+					"maxIterationVariableName": "EmailEntryLoop",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
