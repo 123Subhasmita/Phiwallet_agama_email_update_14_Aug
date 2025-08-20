@@ -2211,7 +2211,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "whenNode-25f614fe-1ae3-4384-90e0-85477af73f35",
@@ -2304,13 +2304,13 @@
 				"previousNodeId": "whenNode-25f614fe-1ae3-4384-90e0-85477af73f35",
 				"branching": "success",
 				"agamaData": {
-					"logMessage": "",
-					"logLevel": "",
+					"logMessage": "Email already exists. Please use a different email.",
+					"logLevel": "info",
 					"nodeIcon": "octicon:log-16",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
-					"displayName": "",
+					"displayName": "Email exists",
 					"hasComment": true,
 					"comment": ""
 				}
@@ -2319,7 +2319,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": false
+			"selected": true
 		},
 		{
 			"id": "assignmentNode-6f88d86a-4a51-4fa6-ab55-33fc3d522f30",
@@ -3489,8 +3489,8 @@
 		}
 	],
 	"viewport": {
-		"x": -1385.1344812857387,
-		"y": 241.99886184152274,
+		"x": -1493.1344812857387,
+		"y": 116.99886184152274,
 		"zoom": 0.568014632393343
 	}
 }
